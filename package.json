@@ -21,7 +21,8 @@
   "scripts": {
     "lint": "eslint .",
     "fix": "eslint . --fix",
-    "test": "jest --verbose --runInBand --passWithNoTests",
+    "jest": "jest --verbose --runInBand --passWithNoTests",
+    "test": "yarn lint && yarn jest",
     "prepublishOnly": "yarn test"
   }
 }
