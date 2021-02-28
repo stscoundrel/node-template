@@ -12,6 +12,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@stryker-mutator/core": "^4.4.1",
+    "@stryker-mutator/jest-runner": "^4.4.1",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
@@ -23,6 +25,7 @@
     "fix": "eslint . --fix",
     "jest": "jest --verbose --runInBand --passWithNoTests",
     "test": "yarn lint && yarn jest",
+    "test:mutation": "stryker run",
     "test:coverage": "jest --coverage --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'",
     "prepublishOnly": "yarn test"
   }
