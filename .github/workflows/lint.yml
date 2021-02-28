@@ -1,6 +1,6 @@
-name: JavaScript - Coverage
+name: JavaScript - Lint
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -13,11 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Coverage with Node.js ${{ matrix.node-version }}
+    - name: Lint with Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --production=false
-    - run: yarn test:coverage
+    - run: yarn lint
       env:
         CI: true
