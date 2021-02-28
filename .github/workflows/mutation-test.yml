@@ -1,4 +1,4 @@
-name: JavaScript - Lint
+name: JavaScript - Mutation Tests
 
 on: [pull_request]
 
@@ -13,11 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Lint with Node.js ${{ matrix.node-version }}
+    - name: Mutation Tests with Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --production=false
-    - run: yarn lint
+    - run: yarn test:mutation
       env:
         CI: true

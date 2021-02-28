@@ -1,6 +1,6 @@
 name: JavaScript - Test
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
