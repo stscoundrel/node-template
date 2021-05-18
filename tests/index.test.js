@@ -1,4 +1,4 @@
-const { example } = require('../index.js')
+const { example } = require('../index')
 
 describe('Example tests', () => {
   test('Test suite runs', () => {
