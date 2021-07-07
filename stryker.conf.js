@@ -6,10 +6,9 @@ module.exports = {
   reporters: ['html', 'clear-text', 'progress'],
   jest: {
     projectType: 'custom',
-    configFile: 'jest.config.ts',
+    configFile: 'jest.config.js',
   },
   testRunner: 'jest',
   coverageAnalysis: 'perTest',
-  tsconfigFile: 'tsconfig.json',
   thresholds: { high: 85, low: 60, break: 75 },
 };
