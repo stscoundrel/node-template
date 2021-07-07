@@ -6,7 +6,7 @@ module.exports = {
   reporters: ['html', 'clear-text', 'progress'],
   jest: {
     projectType: 'custom',
-    configFile: 'jest.config.ts',
+    configFile: 'jest.config.js',
   },
   testRunner: 'jest',
   coverageAnalysis: 'perTest',
