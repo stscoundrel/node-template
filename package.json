@@ -12,7 +12,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stryker-mutator/core": "^6.2.2",
+    "@stryker-mutator/core": "^6.2.3",
     "@stryker-mutator/jest-runner": "^6.2.3",
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
